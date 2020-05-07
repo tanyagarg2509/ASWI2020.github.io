@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     'use strict';
 
     var confer_window = $(window);
@@ -7,8 +7,8 @@
     // :: 1.0 Preloader Active Code
     // ****************************
 
-    confer_window.on('load', function () {
-        $('#preloader').fadeOut('1000', function () {
+    confer_window.on('load', function() {
+        $('#preloader').fadeOut('1000', function() {
             $(this).remove();
         });
     });
@@ -37,27 +37,27 @@
             navText: [('<i class="zmdi zmdi-chevron-left"></i>'), ('<i class="zmdi zmdi-chevron-right"></i>')]
         })
 
-        welcomeSlider.on('translate.owl.carousel', function () {
+        welcomeSlider.on('translate.owl.carousel', function() {
             var layer = $("[data-animation]");
-            layer.each(function () {
+            layer.each(function() {
                 var anim_name = $(this).data('animation');
                 $(this).removeClass('animated ' + anim_name).css('opacity', '0');
             });
         });
 
-        $("[data-delay]").each(function () {
+        $("[data-delay]").each(function() {
             var anim_del = $(this).data('delay');
             $(this).css('animation-delay', anim_del);
         });
 
-        $("[data-duration]").each(function () {
+        $("[data-duration]").each(function() {
             var anim_dur = $(this).data('duration');
             $(this).css('animation-duration', anim_dur);
         });
 
-        welcomeSlider.on('translated.owl.carousel', function () {
+        welcomeSlider.on('translated.owl.carousel', function() {
             var layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
-            layer.each(function () {
+            layer.each(function() {
                 var anim_name = $(this).data('animation');
                 $(this).addClass('animated ' + anim_name).css('opacity', '1');
             });
@@ -68,7 +68,7 @@
     // :: 17.0 ScrollDown Active Code
     // ******************************
 
-    $("#scrollDown").on('click', function () {
+    $("#scrollDown").on('click', function() {
         $('html, body').animate({
             scrollTop: $("#about").offset().top - 75
         }, 800);
@@ -112,9 +112,9 @@
     // *********************************
 
     if ($.fn.imagesLoaded) {
-        $('.confer-portfolio').imagesLoaded(function () {
+        $('.confer-portfolio').imagesLoaded(function() {
             // filter items on button click
-            $('.portfolio-menu').on('click', 'button', function () {
+            $('.portfolio-menu').on('click', 'button', function() {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
@@ -145,7 +145,7 @@
     // :: 6.0 Portfolio Button Active Code
     // ***********************************
 
-    $('.portfolio-menu button.btn').on('click', function () {
+    $('.portfolio-menu button.btn').on('click', function() {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
     })
@@ -153,7 +153,7 @@
     // ********************************
     // :: 7.0 Search Button Active Code
     // ********************************
-    $('.search-btn').on('click', function () {
+    $('.search-btn').on('click', function() {
         $('.search-form').toggleClass('search-form-active');
     })
 
@@ -161,7 +161,7 @@
     // :: 8.0 Stick Active Code
     // ************************
 
-    confer_window.on('scroll', function () {
+    confer_window.on('scroll', function() {
         if (confer_window.scrollTop() > 0) {
             $('.header-area').addClass('sticky');
         } else {
@@ -225,7 +225,7 @@
     // :: 13.0 Countdown Active Code
     // ****************************
     if ($.fn.countdown) {
-        $("#clock").countdown("2019/08/29", function (event) {
+        $("#clock").countdown("2020/06/15", function(event) {
             $(this).html(event.strftime("<div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }
@@ -243,7 +243,7 @@
     // *********************************
     // :: 14.0 Prevent Default 'a' Click
     // *********************************
-    $('a[href="#"]').on('click', function ($) {
+    $('a[href="#"]').on('click', function($) {
         $.preventDefault();
     });
 
@@ -252,7 +252,7 @@
     // *********************************
     var pricingTable = $(".single-ticket-pricing-table");
 
-    pricingTable.on("mouseenter", function () {
+    pricingTable.on("mouseenter", function() {
         pricingTable.removeClass("active");
         $(this).addClass("active");
     });
