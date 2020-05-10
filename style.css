@@ -1994,8 +1994,10 @@ input:required {
 }
 
 .single-speaker-area .speaker-info p {
-    color: #df42b1;
+    color: white;
+    background-color: palevioletred;
     margin-bottom: 2px;
+    padding: 5px;
     font-weight: bold;
     /* letter-spacing: 1px; */
     line-height: 1;

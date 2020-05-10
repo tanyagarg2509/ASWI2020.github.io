@@ -226,7 +226,7 @@
     // ****************************
     if ($.fn.countdown) {
         $("#clock").countdown("2020/06/15", function(event) {
-            $(this).html(event.strftime("<div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+            $(this).html(event.strftime("<div>%m<span>Months</span></div> <div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }
 
