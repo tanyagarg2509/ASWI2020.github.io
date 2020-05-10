@@ -1660,7 +1660,9 @@ input:required {
     border-radius: 10px;
     padding: 30px 25px;
     margin-bottom: 30px;
+    background-color: #4c4f8d;
     overflow: hidden;
+    height: 350px;
 }
 
 .single-we-offer-content .offer-icon {
@@ -1703,8 +1705,9 @@ input:required {
     -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
     font-size: 22px;
-    color: #111343;
+    color: white;
     margin-top: 25px;
+    font-weight: bold;
     position: relative;
     z-index: 2;
 }
@@ -1713,7 +1716,7 @@ input:required {
     -webkit-transition-duration: 1000ms;
     -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
-    color: #5d5e8d;
+    color: #ebebf3;
     margin-bottom: 0;
     position: relative;
     z-index: 2;
