@@ -87,10 +87,6 @@ a:hover {
     font-weight: 500;
 }
 
-li {
-    list-style: none;
-}
-
 p {
     line-height: 1.8;
     color: #5d5e8d;
@@ -101,16 +97,6 @@ p {
 img {
     max-width: 100%;
     height: auto;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin: 0;
-    padding: 0;
 }
 
 .bg-overlay {
@@ -503,11 +489,11 @@ input:required {
 .section-heading {
     position: relative;
     z-index: 1;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .section-heading p {
-    color: #ffffff;
+    color: #df42b1;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -517,7 +503,7 @@ input:required {
 
 .section-heading h4 {
     font-size: 38px;
-    color: #ffffff;
+    color: black;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
