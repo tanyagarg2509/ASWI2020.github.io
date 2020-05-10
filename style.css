@@ -1244,18 +1244,23 @@ input:required {
 }
 
 .single-welcome-slide .welcome-text h6 {
-    color: #ffffff;
+    color: #df42b1;
     margin-bottom: 50px;
     text-transform: uppercase;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: white;
+    /* background-color: #df42b1; */
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 30px;
+}
+
+.single-welcome-slide .welcome-text h6:hover {
+    background-color: -webkit-linear-gradient(120deg, #505add 0%, #df42b1 100%);
 }
 
 @media only screen and (max-width: 767px) {
     .single-welcome-slide .welcome-text h6 {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
 
@@ -3144,6 +3149,7 @@ input:required {
 .single-client-content .single-client-text {
     position: relative;
     z-index: 1;
+    /* height: 600px; */
 }
 
 .single-client-content .single-client-text p {
