@@ -559,7 +559,7 @@ input:required {
 .section-heading-3 {
     position: relative;
     z-index: 1;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .section-heading-3 p {
@@ -572,7 +572,7 @@ input:required {
 }
 
 .section-heading-3 h4 {
-    font-size: 38px;
+    font-size: 25px;
     color: #111343;
     margin-bottom: 0;
     text-transform: uppercase;
