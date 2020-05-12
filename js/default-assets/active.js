@@ -224,11 +224,11 @@
     // ****************************
     // :: 13.0 Countdown Active Code
     // ****************************
-    if ($.fn.countdown) {
-        $("#clock").countdown("2020/06/15", function(event) {
-            $(this).html(event.strftime("<div>%m<span>Months</span></div> <div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
-        });
-    }
+    // if ($.fn.countdown) {
+    //     $("#clock").countdown("2020/06/15", function(event) {
+    //         $(this).html(event.strftime("<div>%m<span>Months</span></div> <div>%D <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+    //     });
+    // }
 
     // ****************************
     // :: 13.0 Scrollup Active Code

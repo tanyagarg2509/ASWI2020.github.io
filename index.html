@@ -200,12 +200,42 @@
                             <h6>Count Every Second Until the Event</h6>
                         </div>
                     </div>
+                    <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("june 15, 2020 09:30:00").getTime();
 
-                    <!-- <div class="col-12 col-md-9">
+                        // Update the count down every 1 second
+                        var x = setInterval(function() {
+
+                            // Get today's date and time
+                            var now = new Date().getTime();
+
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            //
+                            // 
+                            // Output the result in an element with id="demo"
+                            document.getElementById("clock").innerHTML = "<div>" + days + "<span> Days</span></div> <div>" + hours + "<span> Hours</span></div><div>" +
+                                minutes + "<span> Minutes</span></div><div>" + seconds + "<span> Seconds</span></div>";
+
+                            // If the count down is over, write some text 
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("clock").innerHTML = "WORKSHOP IS LIVE NOW";
+                            }
+                        }, 1000);
+                    </script>
+                    <div class="col-12 col-md-8">
                         <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
                             <div id="clock"></div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
